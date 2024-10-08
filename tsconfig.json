@@ -19,10 +19,12 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@app/sites/comune": ["./src/app/sites/comune/routes.ts"],
+      "@app/sites/istituzionale": ["./src/app/sites/istituzionale/routes.ts"],
+      "@app/sites/scuola": ["./src/app/sites/scuola/routes.ts"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
