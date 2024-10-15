@@ -64,7 +64,7 @@ import {
         >
         <it-navbar-item
           ><a class="nav-link" routerLink="typography" routerLinkActive="active"
-            >Tipografia</a
+            >Typography</a
           ></it-navbar-item
         >
         <it-navbar-item
