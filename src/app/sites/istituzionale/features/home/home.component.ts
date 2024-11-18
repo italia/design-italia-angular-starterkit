@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { CalendarioComponent } from "./calendario.component";
-import { EvidenzaComponent } from './evidenza.component';
-import { FooterComponent } from './footer.component';
-import { HeadSectionComponent } from './head-section.component';
+import { CalendarioComponent, EvidenzaComponent, FooterComponent, HeadSectionComponent } from './ui';
 
 @Component({
   standalone: true,
