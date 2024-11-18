@@ -1,4 +1,4 @@
-import { NgFor } from "@angular/common";
+import { NgFor, TitleCasePipe } from "@angular/common";
 import { Component } from "@angular/core";
 import { addDays, format } from 'date-fns';
 import { it } from "date-fns/locale";
@@ -20,9 +20,11 @@ const slidesStoreFactory = () => {
     standalone: true,
     selector: 'app-calendario',
     templateUrl: './calendario.component.html',
-    imports: [ItIconComponent, ItButtonDirective, CarouselModule, NgFor]
+    imports: [ItIconComponent, ItButtonDirective, CarouselModule, NgFor, TitleCasePipe]
 })
 export class CalendarioComponent {
+
+    readonly month = format(new Date(), 'MMMM yyyy', { locale: it });
 
     readonly slidesStore = slidesStoreFactory();
 
