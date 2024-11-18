@@ -26,6 +26,8 @@
     "@angular/router": "^18.2.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "animate.css": "^4.1.1",
+    "date-fns": "^4.1.0",
     "design-angular-kit": "^1.1.2",
     "ngx-owl-carousel-o": "^18.0.0",
     "rxjs": "~7.8.0",
