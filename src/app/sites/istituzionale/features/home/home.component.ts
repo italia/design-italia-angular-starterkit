@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   standalone: true,
-  template: '<h2>Home</h2>',
+  templateUrl: './home.component.html',
 })
-export default class HomeComponent {}
+export default class HomeComponent { }
