@@ -16,7 +16,8 @@
         "cyrilletuzi.angular-schematics",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "vivaxy.vscode-conventional-commits"
+        "vivaxy.vscode-conventional-commits",
+        "github.vscode-pull-request-github"
       ],
       "settings": {
         "editor.formatOnSave": true,
