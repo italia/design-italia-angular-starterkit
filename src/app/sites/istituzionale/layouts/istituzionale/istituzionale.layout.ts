@@ -74,7 +74,7 @@ import {
         >
       </ng-container>
     </it-header>
-    <div class="container">
+    <div>
       <router-outlet></router-outlet>
     </div>
   `,
