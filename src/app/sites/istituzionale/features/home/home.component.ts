@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { CalendarioComponent, EvidenzaComponent, FooterComponent, HeadSectionComponent } from './ui';
 
 @Component({
   standalone: true,
-  template: '<h2>Home</h2>',
+  templateUrl: './home.component.html',
+  imports: [HeadSectionComponent, CalendarioComponent, EvidenzaComponent, CalendarioComponent, FooterComponent]
 })
-export default class HomeComponent {}
+export default class HomeComponent { }
