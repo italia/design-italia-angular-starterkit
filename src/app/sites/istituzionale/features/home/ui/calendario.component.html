@@ -108,69 +108,40 @@
               <h4 class="mb-0 text-center">{{ month | titlecase }}</h4>
             </div>
           </div>
-          <div
-            class="it-carousel-all owl-carousel it-card-bg owl-loaded owl-drag">
-            <owl-carousel-o [options]="customOptions">
-              <ng-container>
-                @for (slide of slidesStore; track slide.id) {
-                  <ng-template carouselSlide [id]="slide.id">
-                    <div class="owl-item" style="width: 320px">
-                      <div class="it-single-slide-wrapper">
-                        <div class="card-wrapper">
-                          <div class="card-bg card">
-                            <div class="card-body">
-                              <h5 class="card-title">
-                                {{ slide.date
-                                }}<span>{{ slide.dayOfWeek }}</span>
-                              </h5>
-                              <p class="card-text">
-                                <a href="/#">Saldo TASI</a>
-                              </p>
-                              <p class="card-text">
-                                <a href="/#"
-                                  >Concerto gratuito piazza XX Settembre</a
-                                >
-                              </p>
-                              <p class="card-text">
-                                <a href="/#"
-                                  >Convocazione Consiglio Comunale - Prima
-                                  seduta</a
-                                >
-                              </p>
-                              <p class="card-text">
-                                <a href="/#">Seconda rata TARI</a>
-                              </p>
-                            </div>
-                          </div>
+          <div class="it-carousel-all it-card-bg">
+            <it-carousel type="three-cols" trackClass="ps-lg-0 pe-lg-0">
+              @for (slide of slidesStore; track slide.id) {
+                <it-carousel-item>
+                  <it-card>
+                    <div class="card-wrapper">
+                      <div>
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            {{ slide.date }}<span>{{ slide.dayOfWeek }}</span>
+                          </h5>
+                          <p class="card-text">
+                            <a href="/#">Saldo TASI</a>
+                          </p>
+                          <p class="card-text">
+                            <a href="/#"
+                              >Concerto gratuito piazza XX Settembre</a
+                            >
+                          </p>
+                          <p class="card-text">
+                            <a href="/#"
+                              >Convocazione Consiglio Comunale - Prima seduta</a
+                            >
+                          </p>
+                          <p class="card-text">
+                            <a href="/#">Seconda rata TARI</a>
+                          </p>
                         </div>
                       </div>
                     </div>
-                  </ng-template>
-                }
-              </ng-container>
-            </owl-carousel-o>
-            <!-- <div class="owl-stage-outer">
-              <div
-                class="owl-stage"
-                style="
-                  transform: translate3d(0px, 0px, 0px);
-                  transition: all 0s ease 0s;
-                  width: 2664px;
-                "></div>
-            </div>
-            <div class="owl-nav disabled">
-              <button class="owl-prev"></button
-              ><button class="owl-next"></button>
-            </div> -->
-            <div class="owl-dots">
-              <button class="owl-dot active" aria-labelledby="owl-dot-0">
-                <span></span></button
-              ><button class="owl-dot" aria-labelledby="owl-dot-1">
-                <span></span></button
-              ><button class="owl-dot" aria-labelledby="owl-dot-2">
-                <span></span>
-              </button>
-            </div>
+                  </it-card>
+                </it-carousel-item>
+              }
+            </it-carousel>
           </div>
         </div>
       </div>

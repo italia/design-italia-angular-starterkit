@@ -9,7 +9,6 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { TranslateModule } from '@ngx-translate/core';
 import { provideDesignAngularKit } from 'design-angular-kit';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -19,7 +18,6 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     importProvidersFrom(TranslateModule.forRoot()),
-    provideDesignAngularKit(),
-    importProvidersFrom(CarouselModule)
+    provideDesignAngularKit()
   ],
 };
